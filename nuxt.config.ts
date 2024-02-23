@@ -7,15 +7,15 @@ export default defineNuxtConfig({
     "@element-plus/nuxt",
     "@pinia/nuxt",
     "nuxt3-leaflet",
-    "dayjs-nuxt"
+    "dayjs-nuxt",
   ],
   devServer: {
-    host: '127.0.0.1',
-    port: 3000
-},
+    host: "127.0.0.1",
+    port: 3000,
+  },
   runtimeConfig: {
     public: {
-      BASE_URL: process.env.BASE_URL,
-      },
+      BASE_URL: process.env.BASE_URL || "http://178.128.154.43",
+    },
   },
 });
